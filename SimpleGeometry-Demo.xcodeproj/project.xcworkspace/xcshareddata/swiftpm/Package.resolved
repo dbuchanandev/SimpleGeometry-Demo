@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SimpleGeometry",
+        "repositoryURL": "https://github.com/donavoncade/SimpleGeometry.git",
+        "state": {
+          "branch": "main",
+          "revision": "253f88a2de71da66523702efa10edef41431d6df",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
