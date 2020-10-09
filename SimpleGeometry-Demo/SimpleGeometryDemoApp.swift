@@ -1,5 +1,5 @@
 //
-//  SimpleGeometry_DemoApp.swift
+//  SimpleGeometryDemoApp.swift
 //  SimpleGeometry-Demo
 //
 //  Created by Donavon Buchanan on 10/7/20.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct SimpleGeometry_DemoApp: App {
+struct SimpleGeometryDemoApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
