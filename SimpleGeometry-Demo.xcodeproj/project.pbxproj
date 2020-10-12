@@ -7,17 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F8824F2D252ED87C00338405 /* SimpleGeometry in Frameworks */ = {isa = PBXBuildFile; productRef = F8824F2C252ED87C00338405 /* SimpleGeometry */; };
+		F85204D6253441780021EB03 /* SGObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85204D5253441780021EB03 /* SGObjectView.swift */; };
+		F85204D92534419E0021EB03 /* MinYCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85204D82534419E0021EB03 /* MinYCell.swift */; };
+		F85204E2253464D80021EB03 /* SimpleGeometry in Frameworks */ = {isa = PBXBuildFile; productRef = F85204E1253464D80021EB03 /* SimpleGeometry */; };
 		F88E802F252D9837004B6E71 /* SimpleGeometryDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88E802E252D9837004B6E71 /* SimpleGeometryDemoApp.swift */; };
 		F88E8031252D9837004B6E71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88E8030252D9837004B6E71 /* ContentView.swift */; };
 		F88E8033252D9838004B6E71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F88E8032252D9838004B6E71 /* Assets.xcassets */; };
 		F88E8036252D9838004B6E71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F88E8035252D9838004B6E71 /* Preview Assets.xcassets */; };
 		F88E8044252D9944004B6E71 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F88E8043252D9944004B6E71 /* README.md */; };
 		F88E8047252D99C9004B6E71 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = F88E8046252D99C9004B6E71 /* License.txt */; };
-		F8EA431125304AA400B20CF1 /* BuildTools in Resources */ = {isa = PBXBuildFile; fileRef = F8EA431025304AA400B20CF1 /* BuildTools */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F85204D5253441780021EB03 /* SGObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGObjectView.swift; sourceTree = "<group>"; };
+		F85204D82534419E0021EB03 /* MinYCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinYCell.swift; sourceTree = "<group>"; };
 		F88E802B252D9837004B6E71 /* SimpleGeometry-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SimpleGeometry-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88E802E252D9837004B6E71 /* SimpleGeometryDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleGeometryDemoApp.swift; sourceTree = "<group>"; };
 		F88E8030252D9837004B6E71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,7 +29,6 @@
 		F88E8037252D9838004B6E71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F88E8043252D9944004B6E71 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F88E8046252D99C9004B6E71 /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
-		F8EA431025304AA400B20CF1 /* BuildTools */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BuildTools; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8824F2D252ED87C00338405 /* SimpleGeometry in Frameworks */,
+				F85204E2253464D80021EB03 /* SimpleGeometry in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,7 +46,6 @@
 		F88E8022252D9837004B6E71 = {
 			isa = PBXGroup;
 			children = (
-				F8EA431025304AA400B20CF1 /* BuildTools */,
 				F88E8043252D9944004B6E71 /* README.md */,
 				F88E8046252D99C9004B6E71 /* License.txt */,
 				F88E802D252D9837004B6E71 /* SimpleGeometry-Demo */,
@@ -65,6 +66,8 @@
 			children = (
 				F88E802E252D9837004B6E71 /* SimpleGeometryDemoApp.swift */,
 				F88E8030252D9837004B6E71 /* ContentView.swift */,
+				F85204D5253441780021EB03 /* SGObjectView.swift */,
+				F85204D82534419E0021EB03 /* MinYCell.swift */,
 				F88E8032252D9838004B6E71 /* Assets.xcassets */,
 				F88E8037252D9838004B6E71 /* Info.plist */,
 				F88E8034252D9838004B6E71 /* Preview Content */,
@@ -87,7 +90,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F88E803A252D9838004B6E71 /* Build configuration list for PBXNativeTarget "SimpleGeometry-Demo" */;
 			buildPhases = (
-				F8EA431325304AF000B20CF1 /* SwitFormat Lint */,
 				F88E8027252D9837004B6E71 /* Sources */,
 				F88E8028252D9837004B6E71 /* Frameworks */,
 				F88E8029252D9837004B6E71 /* Resources */,
@@ -98,7 +100,7 @@
 			);
 			name = "SimpleGeometry-Demo";
 			packageProductDependencies = (
-				F8824F2C252ED87C00338405 /* SimpleGeometry */,
+				F85204E1253464D80021EB03 /* SimpleGeometry */,
 			);
 			productName = "SimpleGeometry-Demo";
 			productReference = F88E802B252D9837004B6E71 /* SimpleGeometry-Demo.app */;
@@ -128,7 +130,7 @@
 			);
 			mainGroup = F88E8022252D9837004B6E71;
 			packageReferences = (
-				F8824F2B252ED87C00338405 /* XCRemoteSwiftPackageReference "SimpleGeometry" */,
+				F85204E0253464D80021EB03 /* XCRemoteSwiftPackageReference "SimpleGeometry" */,
 			);
 			productRefGroup = F88E802C252D9837004B6E71 /* Products */;
 			projectDirPath = "";
@@ -144,7 +146,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8EA431125304AA400B20CF1 /* BuildTools in Resources */,
 				F88E8047252D99C9004B6E71 /* License.txt in Resources */,
 				F88E8044252D9944004B6E71 /* README.md in Resources */,
 				F88E8036252D9838004B6E71 /* Preview Assets.xcassets in Resources */,
@@ -154,34 +155,15 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		F8EA431325304AF000B20CF1 /* SwitFormat Lint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "SwitFormat Lint";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "cd BuildTools\nSDKROOT=macosx\nswift package update #Uncomment this line temporarily to update the version used to the latest matching your BuildTools/Package.swift file\nswift run -c release swiftformat --swiftversion 5.3 --lint \"$SRCROOT\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		F88E8027252D9837004B6E71 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F88E8031252D9837004B6E71 /* ContentView.swift in Sources */,
+				F85204D6253441780021EB03 /* SGObjectView.swift in Sources */,
 				F88E802F252D9837004B6E71 /* SimpleGeometryDemoApp.swift in Sources */,
+				F85204D92534419E0021EB03 /* MinYCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,20 +356,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F8824F2B252ED87C00338405 /* XCRemoteSwiftPackageReference "SimpleGeometry" */ = {
+		F85204E0253464D80021EB03 /* XCRemoteSwiftPackageReference "SimpleGeometry" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/donavoncade/SimpleGeometry.git";
 			requirement = {
-				branch = development;
+				branch = main;
 				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F8824F2C252ED87C00338405 /* SimpleGeometry */ = {
+		F85204E1253464D80021EB03 /* SimpleGeometry */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F8824F2B252ED87C00338405 /* XCRemoteSwiftPackageReference "SimpleGeometry" */;
+			package = F85204E0253464D80021EB03 /* XCRemoteSwiftPackageReference "SimpleGeometry" */;
 			productName = SimpleGeometry;
 		};
 /* End XCSwiftPackageProductDependency section */
