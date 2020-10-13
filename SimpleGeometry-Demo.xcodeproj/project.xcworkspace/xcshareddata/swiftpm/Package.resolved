@@ -5,9 +5,9 @@
         "package": "SimpleGeometry",
         "repositoryURL": "https://github.com/donavoncade/SimpleGeometry.git",
         "state": {
-          "branch": "main",
-          "revision": "698944b0606d7c8704bc7dcb6e3b9965a2326792",
-          "version": null
+          "branch": null,
+          "revision": "fea9e0b7e6a254388c82fbc15fdba854386c21f7",
+          "version": "1.0.6-beta"
         }
       }
     ]

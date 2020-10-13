@@ -21,7 +21,7 @@ struct MinYCell: View {
 
             Text("minY: \(sgObject.rect.minY)")
         }
-        .readFrame(to: sgObject)
+        .readSize(to: sgObject)
     }
 }
 

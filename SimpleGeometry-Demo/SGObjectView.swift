@@ -15,54 +15,47 @@ struct SGObjectView: View {
      properties needed for the .readFrame modifier
      */
     @StateObject
-    private var vStackSG = SGObject(behavior: .fill)
-
-    /*
-     Similar to the above, create a @StateObject of type IndentifiableRect
-     to hold all the properties needed for the .readFrame modifier, this
-     time using the default initializer values.
-     */
+    private var viewSize = SGObject()
+    
     @StateObject
-    private var filledViewSG = SGObject()
+    private var parentViewSize = SGObject()
 
     // MARK: Internal
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             // X Axis
             VStack(alignment: .leading) {
-                Text("minX: \(vStackSG.rect.minX)")
-                Text("midX: \(vStackSG.rect.midX)")
-                Text("maxX: \(vStackSG.rect.maxX)")
+                Text("minX: \(viewSize.rect.minX)")
+                Text("midX: \(viewSize.rect.midX)")
+                Text("maxX: \(viewSize.rect.maxX)")
             }
 
             // Y Axis
             VStack(alignment: .leading) {
-                Text("minY: \(vStackSG.rect.minY)")
-                Text("midY: \(vStackSG.rect.midY)")
-                Text("maxY: \(vStackSG.rect.maxY)")
+                Text("minY: \(viewSize.rect.minY)")
+                Text("midY: \(viewSize.rect.midY)")
+                Text("maxY: \(viewSize.rect.maxY)")
             }
 
             // VStack Size
             VStack(alignment: .leading) {
-                Text("Contents Width: \(vStackSG.rect.width)")
-                Text("Contents Height: \(vStackSG.rect.height)")
+                Text("Contents Width: \(viewSize.rect.width)")
+                Text("Contents Height: \(viewSize.rect.height)")
             }
 
             // Full View Size
             VStack(alignment: .leading) {
-                Text("Full Width: \(filledViewSG.rect.width)")
-                Text("Full Height: \(filledViewSG.rect.height)")
+                Text("Full Width: \(parentViewSize.rect.width)")
+                Text("Full Height: \(parentViewSize.rect.height)")
             }
         }
         .font(.system(.body, design: .monospaced))
         // Blue border for illustration. This is the size being read.
         .border(Color.blue, width: 2)
         // Read size for contents of the VStack, filling the view
-        .readFrame(to: vStackSG)
-        // Red border for illustratrion. This is the size of the filled view.
-        .border(Color.red, width: 2)
-        // Read the size of the previously filled view
-        .readFrame(to: filledViewSG)
+        .readSize(to: viewSize)
+        // Read full size of the containing view
+        .readParentSize(to: parentViewSize)
     }
 }
 
