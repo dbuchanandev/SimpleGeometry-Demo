@@ -40,7 +40,7 @@ struct TestingView: View {
                 }
                 .readSize(to: lazyVStack)
                 .padding()
-                .readSize(to: lazyVStackContainer)
+                .readParentSize(to: lazyVStackContainer)
             }
             
             Section(header: Text("LazyHStack")) {
@@ -53,7 +53,7 @@ struct TestingView: View {
                 }
                 .readSize(to: lazyHStack)
                 .padding()
-                .readSize(to: lazyHStackContainer)
+                .readParentSize(to: lazyHStackContainer)
             }
             
             Section(header: Text("LazyVGrid")) {
@@ -66,7 +66,7 @@ struct TestingView: View {
                 }
                 .readSize(to: lazyVGrid)
                 .padding()
-                .readSize(to: lazyVGridContainer)
+                .readParentSize(to: lazyVGridContainer)
             }
         }
     }
