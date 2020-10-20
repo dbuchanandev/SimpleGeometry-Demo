@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            SGObjectView()
+            MeasuredView()
                 .tabItem {
                     Label(
                         "SGObject Info",

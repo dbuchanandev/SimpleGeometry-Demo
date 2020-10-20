@@ -1,5 +1,5 @@
 //
-//  SGObjectView.swift
+//  MeasuredView.swift
 //  SimpleGeometry-Demo
 //
 //  Created by Donavon Buchanan on 10/12/20.
@@ -8,7 +8,7 @@
 import SimpleGeometry
 import SwiftUI
 
-struct SGObjectView: View {
+struct MeasuredView: View {
     // MARK: Private
     /*
      Create a @StateObject of type IndentifiableRect to hold all the
@@ -17,36 +17,36 @@ struct SGObjectView: View {
     @StateObject
     private var viewSize = SGObject()
     
-    @StateObject
-    private var parentViewSize = SGObject()
+    @State
+    private var parentViewSize = CGSize()
 
     // MARK: Internal
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             // X Axis
             VStack(alignment: .leading) {
-                Text("minX: \(viewSize.rect.minX)")
-                Text("midX: \(viewSize.rect.midX)")
-                Text("maxX: \(viewSize.rect.maxX)")
+                Text("minX: \(viewSize.minX)")
+                Text("midX: \(viewSize.midX)")
+                Text("maxX: \(viewSize.maxX)")
             }
 
             // Y Axis
             VStack(alignment: .leading) {
-                Text("minY: \(viewSize.rect.minY)")
-                Text("midY: \(viewSize.rect.midY)")
-                Text("maxY: \(viewSize.rect.maxY)")
+                Text("minY: \(viewSize.minY)")
+                Text("midY: \(viewSize.midY)")
+                Text("maxY: \(viewSize.maxY)")
             }
 
             // VStack Size
             VStack(alignment: .leading) {
-                Text("Contents Width: \(viewSize.rect.width)")
-                Text("Contents Height: \(viewSize.rect.height)")
+                Text("Contents Width: \(viewSize.width)")
+                Text("Contents Height: \(viewSize.height)")
             }
 
             // Full View Size
             VStack(alignment: .leading) {
-                Text("Full Width: \(parentViewSize.rect.width)")
-                Text("Full Height: \(parentViewSize.rect.height)")
+                Text("Full Width: \(parentViewSize.width)")
+                Text("Full Height: \(parentViewSize.height)")
             }
         }
         .font(.system(.body, design: .monospaced))
@@ -55,12 +55,12 @@ struct SGObjectView: View {
         // Read size for contents of the VStack, filling the view
         .readSize(to: viewSize)
         // Read full size of the containing view
-        .readParentSize(to: parentViewSize)
+        .measureContainingView(to: $parentViewSize)
     }
 }
 
 struct SGObjectView_Previews: PreviewProvider {
     static var previews: some View {
-        SGObjectView()
+        MeasuredView()
     }
 }

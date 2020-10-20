@@ -19,7 +19,7 @@ struct MinYCell: View {
             Text("Cell #\(index)")
                 .bold()
 
-            Text("minY: \(sgObject.rect.minY)")
+            Text("minY: \(sgObject.minY)")
         }
         .readSize(to: sgObject)
     }
