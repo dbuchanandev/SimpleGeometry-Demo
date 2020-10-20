@@ -22,7 +22,6 @@
 /* Begin PBXFileReference section */
 		F85204D5253441780021EB03 /* MeasuredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasuredView.swift; sourceTree = "<group>"; };
 		F85204D82534419E0021EB03 /* MinYCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinYCell.swift; sourceTree = "<group>"; };
-		F88E514E253B311900A037ED /* SimpleGeometry */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SimpleGeometry; path = ../SimpleGeometry; sourceTree = "<group>"; };
 		F88E802B252D9837004B6E71 /* SimpleGeometry-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SimpleGeometry-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88E802E252D9837004B6E71 /* SimpleGeometryDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleGeometryDemoApp.swift; sourceTree = "<group>"; };
 		F88E8030252D9837004B6E71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,7 +48,6 @@
 		F88E514D253B311900A037ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F88E514E253B311900A037ED /* SimpleGeometry */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
